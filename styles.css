@@ -7,27 +7,27 @@
 /* ---------- Tokens ---------- */
 :root {
   /* palette (overridable by Tweaks) */
-  --c-ink:        #061b26;   /* near-black teal-navy */
-  --c-deep:       #0a2c3e;   /* dark section bg */
-  --c-deep-2:     #0e3a51;
-  --c-blue:       #1577b8;   /* brand */
-  --c-blue-bright:#37a7e0;   /* accent / highlight */
-  --accent:       #37a7e0;   /* tunable accent */
+  --c-ink:        #080e30;   /* near-black navy */
+  --c-deep:       #0d1545;   /* dark section bg */
+  --c-deep-2:     #121c58;
+  --c-blue:       #1528A0;   /* brand primary */
+  --c-blue-bright:#2494D0;   /* accent / highlight */
+  --accent:       #2494D0;   /* tunable accent */
   --c-wa:         #25d366;   /* whatsapp green */
 
-  --c-frost:      #f1f7fb;   /* alt section bg */
-  --c-frost-2:    #e6f1f8;
+  --c-frost:      #f0f4ff;   /* alt section bg */
+  --c-frost-2:    #e0eaf8;
   --c-white:      #ffffff;
-  --c-line:       rgba(6,27,38,.10);
-  --c-line-soft:  rgba(6,27,38,.06);
+  --c-line:       rgba(21,40,160,.10);
+  --c-line-soft:  rgba(21,40,160,.06);
 
-  --fg-1: #08222f;           /* heading on light */
-  --fg-2: #355063;           /* body on light */
-  --fg-3: #6a8293;           /* muted on light */
+  --fg-1: #0a0f2e;           /* heading on light */
+  --fg-2: #2e3870;           /* body on light */
+  --fg-3: #6673a8;           /* muted on light */
 
   --on-dark-1: #ffffff;
-  --on-dark-2: rgba(231,243,250,.78);
-  --on-dark-3: rgba(231,243,250,.55);
+  --on-dark-2: rgba(220,232,255,.80);
+  --on-dark-3: rgba(220,232,255,.55);
 
   /* type */
   --font-display: "Space Grotesk", system-ui, sans-serif;
@@ -40,7 +40,7 @@
 
   --shadow-card: 0 2px 18px rgba(8,40,58,.07);
   --shadow-hover: 0 18px 50px rgba(8,40,58,.16);
-  --shadow-cta: 0 14px 34px rgba(21,119,184,.30);
+  --shadow-cta: 0 14px 34px rgba(21,40,160,.30);
 
   --max: 1200px;
   --pad: clamp(20px, 5vw, 48px);
@@ -51,22 +51,22 @@
 
 /* themes */
 [data-theme="profundo"] {
-  --c-blue: #1f6fd0;
-  --c-blue-bright: #4fb6f2;
-  --accent: #4fb6f2;
-  --c-deep: #071f3a;
-  --c-deep-2: #0c2c52;
-  --c-ink: #04162b;
+  --c-blue: #1528A0;
+  --c-blue-bright: #2494D0;
+  --accent: #2494D0;
+  --c-deep: #09103a;
+  --c-deep-2: #0e174d;
+  --c-ink: #050b28;
 }
 [data-theme="aco"] {
-  --c-blue: #2b5d86;
-  --c-blue-bright: #5fd0e6;
-  --accent: #5fd0e6;
-  --c-deep: #1a232b;
-  --c-deep-2: #28333d;
-  --c-ink: #11181e;
-  --c-frost: #f4f6f7;
-  --c-frost-2: #e9edf0;
+  --c-blue: #1d3a9e;
+  --c-blue-bright: #3b8fc7;
+  --accent: #3b8fc7;
+  --c-deep: #111a40;
+  --c-deep-2: #1a2550;
+  --c-ink: #0a1030;
+  --c-frost: #f2f4ff;
+  --c-frost-2: #e4e9f8;
 }
 
 * { box-sizing: border-box; }
@@ -124,7 +124,7 @@ p { margin: 0; }
 .btn-wa { background: var(--c-wa); color: #04331a; box-shadow: 0 12px 30px rgba(37,211,102,.32); }
 .btn-wa:hover { transform: translateY(-2px); box-shadow: 0 18px 38px rgba(37,211,102,.42); }
 .btn-primary { background: var(--c-blue); color: #fff; box-shadow: var(--shadow-cta); }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(21,119,184,.42); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(21,40,160,.42); }
 .btn-ghost { background: transparent; border-color: var(--c-line); color: var(--fg-1); }
 .btn-ghost:hover { border-color: var(--c-blue); color: var(--c-blue); transform: translateY(-2px); }
 .btn-ghost.on-dark { color: #fff; border-color: rgba(255,255,255,.28); }
