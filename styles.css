@@ -228,13 +228,19 @@ p { margin: 0; }
 /* ---------- Section base ---------- */
 .section { padding-block: var(--sec); }
 .section.frost { background: var(--c-frost); }
-.section.dark { background: var(--c-deep); color: var(--on-dark-2); position: relative; overflow: hidden; }
+.section.dark {
+  background:
+    radial-gradient(ellipse 800px 500px at 92% -8%, rgba(36,148,208,.22) 0%, transparent 58%),
+    radial-gradient(ellipse 550px 400px at 4% 110%, rgba(21,40,160,.28) 0%, transparent 60%),
+    linear-gradient(150deg, #080e30 0%, #0d1545 38%, #1528A0 100%);
+  color: var(--on-dark-2); position: relative; overflow: hidden;
+}
 .section.dark h2, .section.dark h3 { color: #fff; }
 .section.dark .sec-head p { color: var(--on-dark-2); }
 .section.dark .em { color: var(--c-blue-bright); }
 .section.dark::before {
   content:""; position:absolute; inset:0; pointer-events:none;
-  background: radial-gradient(700px 420px at 90% -5%, color-mix(in srgb, var(--c-blue-bright) 14%, transparent), transparent 60%);
+  background: radial-gradient(600px 360px at 50% 50%, rgba(36,148,208,.08) 0%, transparent 70%);
 }
 .section.dark > .wrap { position: relative; z-index: 1; }
 
@@ -322,8 +328,14 @@ p { margin: 0; }
 .faq-item.open .faq-ic::after { transform: translate(-50%,-50%) scaleY(0); }
 .faq-a { max-height: 0; overflow: hidden; transition: max-height .4s var(--ease); }
 .faq-a p { padding: 0 4px 26px; font-size: 1rem; color: var(--fg-2); max-width: 60ch; }
-.faq-aside { background: var(--c-deep); color:#fff; border-radius: var(--radius); padding: 36px 32px; position: relative; overflow: hidden; }
-.faq-aside::before { content:""; position:absolute; inset:0; background: radial-gradient(420px 320px at 100% 0, color-mix(in srgb,var(--c-blue-bright) 20%, transparent), transparent 60%); }
+.faq-aside {
+  background:
+    radial-gradient(ellipse 420px 320px at 100% 0, rgba(36,148,208,.28) 0%, transparent 58%),
+    radial-gradient(ellipse 300px 250px at 0% 100%, rgba(21,40,160,.35) 0%, transparent 60%),
+    linear-gradient(145deg, #1528A0 0%, #0e1870 100%);
+  color:#fff; border-radius: var(--radius); padding: 36px 32px; position: relative; overflow: hidden;
+}
+.faq-aside::before { content:""; position:absolute; inset:0; background: radial-gradient(300px 200px at 100% 0, rgba(255,255,255,.05) 0%, transparent 60%); }
 .faq-aside > * { position: relative; }
 .faq-aside h3 { color:#fff; font-size: 1.5rem; }
 .faq-aside p { margin-top: 14px; color: var(--on-dark-2); }
@@ -332,8 +344,18 @@ p { margin: 0; }
 .faq-aside .or a { color: #fff; font-weight: 600; }
 
 /* ---------- Final CTA ---------- */
-.cta-final { background: var(--c-ink); color:#fff; position: relative; overflow: hidden; }
-.cta-final::before { content:""; position:absolute; inset:0; background: radial-gradient(640px 460px at 50% 120%, color-mix(in srgb,var(--c-blue) 36%, transparent), transparent 60%); }
+.cta-final {
+  background:
+    radial-gradient(ellipse 90% 65% at 50% 150%, rgba(36,148,208,.38) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 0% 0%, rgba(21,40,160,.22) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 0%, rgba(36,148,208,.12) 0%, transparent 60%),
+    linear-gradient(180deg, #080e30 0%, #1528A0 100%);
+  color:#fff; position: relative; overflow: hidden;
+}
+.cta-final::before {
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background: radial-gradient(ellipse 100% 1px at 50% 0%, rgba(36,148,208,.4) 0%, transparent 100%);
+}
 .cta-inner { position: relative; text-align: center; max-width: 720px; margin: 0 auto; }
 .cta-inner h2 { color:#fff; font-size: clamp(2.1rem,4.4vw,3.3rem); margin-top: 18px; }
 .cta-inner p { margin-top: 18px; color: var(--on-dark-2); font-size: 1.1rem; }
@@ -342,7 +364,12 @@ p { margin: 0; }
 .cta-actions { margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
 /* ---------- Footer ---------- */
-.footer { background: var(--c-ink); color: var(--on-dark-2); border-top: 1px solid rgba(255,255,255,.08); padding-block: 64px 30px; }
+.footer {
+  background:
+    radial-gradient(ellipse 700px 400px at 100% 0%, rgba(21,40,160,.18) 0%, transparent 55%),
+    linear-gradient(180deg, #0a0f2e 0%, #06091e 100%);
+  color: var(--on-dark-2); border-top: 1px solid rgba(36,148,208,.18); padding-block: 64px 30px;
+}
 .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.1fr; gap: 40px; }
 .footer .brand-logo { height: 100px; }
 .footer-about { margin-top: 18px; font-size: .95rem; color: var(--on-dark-3); max-width: 34ch; }
