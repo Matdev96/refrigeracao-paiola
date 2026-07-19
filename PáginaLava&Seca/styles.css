@@ -53,7 +53,7 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   display: flex; align-items: center; justify-content: space-between;
   height: 64px;
 }
-.brand-logo { height: 80px; width: auto; object-fit: contain; }
+.brand-logo { height: 100px; width: auto; object-fit: contain; }
 .header-contact { display: flex; align-items: center; gap: 16px; }
 .header-phone {
   font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: .95rem;
@@ -346,7 +346,7 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   display: grid; grid-template-columns: 1.6fr 1fr 1fr;
   gap: 44px; margin-bottom: 48px;
 }
-.footer-brand .brand-logo { height: 76px; margin-bottom: 16px; }
+.footer-brand .brand-logo { height: 82px; margin-bottom: 16px; }
 .footer-brand p { font-size: .88rem; line-height: 1.65; }
 .footer-col h4 {
   font-family: 'Space Grotesk', sans-serif; font-weight: 700;
